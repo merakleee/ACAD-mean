@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACAD mean</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="center-container">
+
+        <h1>Semester 3 Average Calculator</h1>
+        <h2>ACAD - USTHB</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Note TD</th>
+                    <th>Note TP</th>
+                    <th>Note Examen</th>
+                    <th>Crédit</th>
+                    <th>Coef</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Architecture des Ordinateurs I</td>
+                    <td><input type="number" name="archi_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="archi_exam" min="0" max="20" step="0.01"></td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Algorithmique et Structures de données</td>
+                    <td><input type="number" name="algo_td" min="0" max="20" step="0.01"></td>
+                    <td><input type="number" name="algo_tp" min="0" max="20" step="0.01"></td>
+                    <td><input type="number" name="algo_exam" min="0" max="20" step="0.01"></td>
+                    <td>6</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Systèmes d’informations</td>
+                    <td><input type="number" name="sys_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="sys_exam" min="0" max="20" step="0.01"></td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Analyse Numérique</td>
+                    <td><input type="number" name="analyse_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="analyse_exam" min="0" max="20" step="0.01"></td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Probabilités et Statistiques</td>
+                    <td><input type="number" name="stats_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="stats_exam" min="0" max="20" step="0.01"></td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Logique Mathématique</td>
+                    <td><input type="number" name="log_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="log_exam" min="0" max="20" step="0.01"></td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Anglais I</td>
+                    <td><input type="number" name="ang_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="ang_exam" min="0" max="20" step="0.01"></td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <button type="button" onclick="calculateAverage()">Calculate Average</button>
+        <div id="averageResult"></div>
+    </div>
+    <div class="credit">Made by MERAKLEE</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
