@@ -63,9 +63,11 @@ button:hover {
 
 #averageResult {
     margin-top: 22px;
-    font-size: 1.15em;
+    font-size: 1.5em;
     font-weight: bold;
-    color: #1b5e20;
+    min-height: 2.5em;
+    text-align: center;
+    transition: color 0.3s;
 }
 
 .center-container {
@@ -93,4 +95,120 @@ button:hover {
     color: #555;
     opacity: 0.7;
     letter-spacing: 1px;
+}
+
+.center-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    max-width: 98vw;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+
+
+    h1 {
+        font-size: 1.8em;
+        margin: 15px 0 5px 0;
+    }
+
+    h2 {
+        font-size: 0.95em;
+        margin: 0 0 15px 0;
+    }
+
+    body {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .center-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 95vw;
+        font-size: 0.9em;
+    }
+
+    th,
+    td {
+        padding: 6px 4px;
+        font-size: 0.85em;
+    }
+
+    input[type="number"] {
+        width: 50px;
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 16px;
+        margin-top: 15px;
+    }
+
+
+    #averageResult {
+        font-size: 1.4em;
+        margin-top: 15px;
+    }
+
+    #averageResult span {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .credit {
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.result-bad {
+    color: #c62828;
+}
+
+.result-mid {
+    color: #f9a825;
+}
+
+.result-good {
+    color: #388e3c;
+}
+
+.result-excellent {
+    color: #1565c0;
+}
+
+@keyframes pop-result {
+    0% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.24);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.result-animate {
+    animation: pop-result 0.4s ease;
 }
