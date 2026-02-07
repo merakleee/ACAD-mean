@@ -12,8 +12,9 @@
 <body>
     <div class="center-container">
 
-        <h1>Semester 3 Average Calculator</h1>
+        <h1>Average Calculator</h1>
         <h2>ACAD - USTHB</h2>
+        <h2 style="font-weight: bold;">Semester 3</h2>
         <table>
             <thead>
                 <tr>
@@ -86,8 +87,86 @@
         </table>
         <br>
         <br>
-        <button type="button" onclick="calculateAverage()">Calculate Average</button>
-        <div id="averageResult"></div>
+        <button type="button" onclick="calculateAverage3()">Calculate Average</button>
+        <div id="averageResult3"></div>
+
+        <br><br>
+        <h2 style="font-weight: bold;">Semester 4</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Note TD</th>
+                    <th>Note TP</th>
+                    <th>Note Examen</th>
+                    <th>Crédit</th>
+                    <th>Coef</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Systèmes d’exploitation I</td>
+                    <td><input type="number" name="se_td" min="0" max="20" step="0.01"></td>
+                    <td><input type="number" name="se_tp" min="0" max="20" step="0.01"></td>
+                    <td><input type="number" name="se_exam" min="0" max="20" step="0.01"></td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Programmation Orientée Objet</td>
+                    <td><input type="number" name="poo_td" min="0" max="20" step="0.01"></td>
+                    <td><input type="number" name="poo_tp" min="0" max="20" step="0.01"></td>
+                    <td><input type="number" name="poo_exam" min="0" max="20" step="0.01"></td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Bases de Données</td>
+                    <td><input type="number" name="bdd_td" min="0" max="20" step="0.01"></td>
+                    <td><input type="number" name="bdd_tp" min="0" max="20" step="0.01"></td>
+                    <td><input type="number" name="bdd_exam" min="0" max="20" step="0.01"></td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Théorie des langages</td>
+                    <td><input type="number" name="thl_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="thl_exam" min="0" max="20" step="0.01"></td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Architecture des ordinateurs II</td>
+                    <td><input type="number" name="archi2_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="archi2_exam" min="0" max="20" step="0.01"></td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Anglais II</td>
+                    <td><input type="number" name="ang2_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="ang2_exam" min="0" max="20" step="0.01"></td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td><input type="number" name="py_td" min="0" max="20" step="0.01"></td>
+                    <td></td>
+                    <td><input type="number" name="py_exam" min="0" max="20" step="0.01"></td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <button type="button" onclick="calculateAverage4()">Calculate Average</button>
+        <div id="averageResult4"></div>
     </div>
     <div class="credit">Made by MERAKLEE</div>
 

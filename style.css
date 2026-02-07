@@ -61,7 +61,7 @@ button:hover {
     background: #28794d;
 }
 
-#averageResult {
+#averageResult3 {
     margin-top: 22px;
     font-size: 1.5em;
     font-weight: bold;
@@ -211,4 +211,13 @@ body {
 
 .result-animate {
     animation: pop-result 0.4s ease;
+}
+
+#averageResult4 {
+    margin-top: 22px;
+    font-size: 1.5em;
+    font-weight: bold;
+    min-height: 2.5em;
+    text-align: center;
+    transition: color 0.3s;
 }
