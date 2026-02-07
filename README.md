@@ -11,6 +11,7 @@ A simple web tool for ACAD - USTHB students to calculate their semester grade av
 - Takes subject coefficients into account for a weighted semester average.
 - Gives instant feedback and fun comments/emoji based on your semester result.
 - Clean, mobile-friendly layout.
+- calculates fourth semester average 
 
 ## Usage
 
